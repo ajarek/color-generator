@@ -1,0 +1,80 @@
+section a {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 4px;
+}
+
+section a span {
+    display: block;
+    position: absolute;
+    background: rgb(0, 123, 255);
+}
+
+section a span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+
+a:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: 0.5s;
+}
+
+section a span:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+section a span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+}
+
+a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+
+section a span:nth-child(4) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+a:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: 0.5s;
+}
